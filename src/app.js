@@ -82,12 +82,6 @@ app.get('/weather', (req, res) => {
             })
         })
     })
-
-    // res.send({
-    //     forcaste : "Its rainy",
-    //     location : "Bhadravathi",
-    //     address : req.query.address
-    // })
 })
 
 app.get('/products', (req, res) => {
@@ -112,5 +106,5 @@ app.get('*', (req, res) => {
 
 //Starting up the server on port 3000, message will not be displayed on web server.
 app.listen( port, () => {
-    console.log('Server is up and running on port 3000')
+    console.log(`Server is up and running on port ${port}`)
 })
